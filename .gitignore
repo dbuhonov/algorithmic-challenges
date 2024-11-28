@@ -1,0 +1,56 @@
+# .gitignore for PHP project
+
+# Ignore PHPStorm project files
+.idea/
+
+# Ignore Composer vendor directory
+/vendor/
+
+# Ignore Composer lock file if you don't want it in the repo
+/composer.lock
+
+# Ignore .env files for environment variables (keep it local)
+.env
+
+# Ignore IDE/editor configuration files
+/.vscode/
+/*.swp
+
+# Ignore logs
+*.log
+*.out
+
+# Ignore cache and session files
+/cache/
+/session/
+
+# Ignore build and temp files
+/build/
+/tmp/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore PHPUnit configuration
+phpunit.xml
+phpunit.xml.dist
+
+# Ignore PHPUnit coverage files
+coverage/
+
+# Ignore local environment files
+/.env.local
+/.env.testing
+
+# Ignore lock files for package managers (if using npm, yarn, etc.)
+/node_modules/
+yarn.lock
+package-lock.json
+
+# Ignore coverage directories (for code coverage tools like Xdebug, PHP_CodeCoverage, etc.)
+/coverage/
+
+# Ignore database dumps (if you store them locally)
+*.sql
+*.sql.gz
