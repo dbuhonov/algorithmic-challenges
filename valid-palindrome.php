@@ -1,16 +1,15 @@
 <?php
 
-class Solution
-{
-
+class Solution {
     /**
      * @param String $s
      * @return Boolean
      */
-    function isPalindrome(string $s): bool
+    function isPalindrome(string $string): bool
     {
-        $s = strtolower(preg_replace("/[^a-z0-9]/i", "", $s));
+        $stringClear = strtolower(preg_replace("/[^a-z0-9]/i", "", $string));
 
-        return $s === strrev($s);
+        return $s === strrev($stringClear);
     }
 }
+
