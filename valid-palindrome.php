@@ -9,7 +9,7 @@ class Solution {
     {
         $stringClear = strtolower(preg_replace("/[^a-z0-9]/i", "", $string));
 
-        return $string === strrev($stringClear);
+        return $stringClear === strrev($stringClear);
     }
 }
 
